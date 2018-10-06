@@ -127,7 +127,7 @@ class person_following(object):
 			if angle2 > 45:
 				angle2 = angle2 - 360
 			#calculates size of objects
-			size = math.tan(math.radians(angle2 - angle)*dist
+			size = math.tan(math.radians(angle2 - angle)*dist)
 			#if the size is within the threshold, take the object's angle and distance
 			if size < self.size_max and size > self.size_min:
 				self.object_size_array.append([(angle2 + angle)/2.0, dist])
