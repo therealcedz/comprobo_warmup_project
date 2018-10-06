@@ -104,7 +104,7 @@ class obstacle_avoidance(object):
 						min_dist_index = i
 						dist_array_min = self.dist_array[i]
 				#takes the minimum value, and adds distance to opposite side
-				self.dist_array[8-min_dist_index] += (5 - dist_array_min)*.5]
+				self.dist_array[8-min_dist_index] += (5 - dist_array_min)*.5
 				#takes the maximum distance located
 				self.max_pos = self.dist_array.index(max(self.dist_array))
 				#and turns it into an angle 
